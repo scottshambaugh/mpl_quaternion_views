@@ -1,8 +1,8 @@
-from serial import Serial
+from itertools import product, combinations
 from collections import defaultdict
+from serial import Serial
 import matplotlib.pyplot as plt
 import numpy as np
-from itertools import product, combinations
 import quaternion
 import datetime
 
@@ -17,7 +17,7 @@ def wrap_angle(ang):
 
 
 def quat_to_elev_azim_roll(q, angle_offsets=(0, 0, 0)):
-    # See Diebel, "Representing Attitude: Euler Angles, Unit Quaternions, and Rotation Vectors"
+    # See Diebel, James "Representing Attitude: Euler Angles, Unit Quaternions, and Rotation Vectors" (2006)
     # https://www.astro.rug.nl/software/kapteyn-beta/_downloads/attitude.pdf
     # Sequence 321
     q0, q1, q2, q3 = q.w, q.x, q.y, q.z
