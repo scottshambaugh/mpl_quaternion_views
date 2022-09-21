@@ -1,5 +1,7 @@
 This repo holds the code to read in quaternions from an ICM-20948 IMU that's connected to a Teensy 4.0 microcontroller. That is piped to my laptop running python on linux on windows via Windows Subsystem for Linux. If you have a pure windows/mac/linux machine then the steps below will be different but hopefully similar.
 
+Blog post describing the project: **[Flying around 3d plots with an IMU and quaternions](https://theshamblog.com/flying-around-3d-plots-with-an-imu-and-quaternions/)**
+
 ## Installation instructions
 
 ### ICM-20948 and Teeny Driver:
